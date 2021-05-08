@@ -4,8 +4,7 @@
 
 #### Required Tools
 
-
-`iverilog` and   `gtkwave`
+`iverilog` and  `gtkwave`
 
 ### Problem Statement 
 --------------------------
@@ -19,7 +18,7 @@
 
 ## Steps to follow
 
-1. Install iverilog and gtkwave
+1. Install `iverilog` and `gtkwave`
 2. Simulate rvmyth using the following steps:
      1. git clone https://github.com/kunalg123/rvmyth/
      2. cd rvmyth
