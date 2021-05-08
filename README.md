@@ -28,7 +28,7 @@
   
  *10-bit digital codes observed at the output of rvmyth.*
  
- ![image](https://user-images.githubusercontent.com/79994584/117537386-2ae39f00-b01e-11eb-9071-e9a1540a462c.png)
+ ![](interface/rvmyth.png)
 
  
 3. Design the 10-bit DAC using the given specs in verilog and test for its correct functionality.
@@ -50,7 +50,7 @@
 4. Finally integrate both rvymth and DAC using a Top level module. 
 
 
-![image](https://user-images.githubusercontent.com/79994584/117537395-3636ca80-b01e-11eb-8721-a4b39af912d5.png)
+![](interface/interface.png)
 
 
 `out [9:0]` --> rvymth 10-bit digital output
