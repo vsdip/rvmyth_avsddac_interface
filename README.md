@@ -53,6 +53,13 @@
 ![image](https://user-images.githubusercontent.com/79994584/117537395-3636ca80-b01e-11eb-8721-a4b39af912d5.png)
 
 
+`out [9:0]` --> rvymth 10-bit digital output
+
+`D [9:0]` --> DAC 10-bit digital input 
+
+`Out` --> DAC analog output`
+
+
 
 
 
