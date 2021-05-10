@@ -8,12 +8,14 @@
 
 ### Problem Statement 
 --------------------------
-![image](https://user-images.githubusercontent.com/79994584/117536647-d9d1ac00-b019-11eb-9966-b78a4b1a6adf.png)
+
+![image](https://user-images.githubusercontent.com/79994584/117629161-81281d80-b197-11eb-9843-c091b3c0e576.png)
 
 
 ### DAC Specs Provided 
 ------------------------
-![image](https://user-images.githubusercontent.com/79994584/117536828-f7ebdc00-b01a-11eb-9067-b16839c3d939.png)
+
+![image](https://user-images.githubusercontent.com/79994584/117629351-b5034300-b197-11eb-91d6-9cf9b3fb74b4.png)
 
 
 ## Steps to follow
