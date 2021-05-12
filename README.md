@@ -22,18 +22,26 @@
 
 1. Install `iverilog` and `gtkwave`
 2. Simulate rvmyth using the following steps:
-     1. git clone https://github.com/kunalg123/rvmyth/
-     2. cd rvmyth
-     3. iverilog mythcore_test.v tb_mythcore_test.v
-     4. ./a.out
-     5. gtkwave tb_mythcore_test.vcd
+
+     1. `git clone https://github.com/kunalg123/rvmyth/`
+     2. `cd rvmyth`
+     3. `iverilog mythcore_test.v tb_mythcore_test.v`
+     4. `./a.out`
+     5. `gtkwave tb_mythcore_test.vcd`
   
- *10-bit digital codes observed at the output of rvmyth.*
  
  ![](interface/rvmyth.png)
 
+ *10-bit digital codes observed at the output of rvmyth.*
+ 
  
 3. Design the 10-bit DAC using the given specs in verilog and test for its correct functionality.
+
+     1. `iverilog avsddac.v avsddac_tb_test.v`
+     2. `./a/out`
+     3. `gtkwave avsddac_tb_test.vcd`
+
+
 
 **DAC Output in Analog Step format:**
 
@@ -45,7 +53,7 @@
 
 
 
-4. Finally integrate both rvymth and DAC using a Top level module. 
+4. Finally integrate both rvymth and DAC using a Top level module and test it to verify the correctness of the integration.
 
 
 ![](interface/interface.png)
