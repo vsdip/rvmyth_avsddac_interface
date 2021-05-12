@@ -34,7 +34,6 @@
 
  
 3. Design the 10-bit DAC using the given specs in verilog and test for its correct functionality.
-/
 
 **DAC Output in Analog Step format:**
 
@@ -56,7 +55,7 @@
 
 `D [9:0]` --> DAC 10-bit digital input 
 
-`Out` --> DAC analog output`
+`dacout` --> DAC analog output`
 
 
 
