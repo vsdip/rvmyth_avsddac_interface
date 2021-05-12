@@ -34,19 +34,16 @@
 
  
 3. Design the 10-bit DAC using the given specs in verilog and test for its correct functionality.
-
-![image](https://user-images.githubusercontent.com/79994584/117537805-eefe0900-b020-11eb-98cf-b8c37126ec0f.png)
-
-
-![image](https://user-images.githubusercontent.com/79994584/117537959-a6931b00-b021-11eb-8b31-f6ec641c4e73.png)
-
+/
 
 **DAC Output in Analog Step format:**
 
-![image](https://user-images.githubusercontent.com/79994584/117538115-3df86e00-b022-11eb-93e9-2d9b1af04d0a.png)
+
+![image](https://user-images.githubusercontent.com/79994584/117964966-e0c12d00-b33f-11eb-9079-a90298242154.png)
 
 
-![image](https://user-images.githubusercontent.com/79994584/117538118-4486e580-b022-11eb-90b8-e85a92195999.png)
+![image](https://user-images.githubusercontent.com/79994584/117965181-19610680-b340-11eb-969a-e53775460774.png)
+
 
 
 4. Finally integrate both rvymth and DAC using a Top level module. 
