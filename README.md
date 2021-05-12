@@ -66,8 +66,10 @@
 `dacout` --> DAC analog output`
 
 
+*Further steps require openLANE and skywater130 PDK.*
 
 
+## OpenLANE and sky130 installation 
 
 
 
