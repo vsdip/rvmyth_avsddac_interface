@@ -135,13 +135,13 @@ The synthesized netlist can be found here.
 
 *Both pre-synth and post-synth simulations must give out the same output.*
 
-Pre -synthesis Simulation:
+**Pre -synthesis Simulation:**
 
 ![image](https://user-images.githubusercontent.com/79994584/119227610-62793d80-bb2c-11eb-96e4-84e7801556f6.png)
 
 
 
-Post-synthesis Simulation : 
+**Post-synthesis Simulation:** 
 
 ![image](https://user-images.githubusercontent.com/79994584/119227589-4c6b7d00-bb2c-11eb-8396-785390399740.png)
 
