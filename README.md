@@ -56,6 +56,12 @@
 4. Finally integrate both rvymth and DAC using a Top level module and test it to verify the correctness of the integration.
 
 
+   1. `iverilog rvmyth_avsddac_interface.v rvmyth_avsddac_interface_TB.v`
+   2. `./a/out`
+   3. `gtkwave rvmyth_avsddac_interface_TB.vcd`
+
+
+
 ![](interface/interface.png)
 
 
@@ -80,7 +86,54 @@ The OpenLANE and sky130 installation can be done by following the steps in this 
 
 ### 1.) `Synthesis`
 
-In OpenLANE this process is performed using `yosys`. 
+* In OpenLANE the RTL synthesis is performed by `yosys`.
+* The technolgy mapping is performed by `ABC`.
+* Finally, the timing reports are generated for the resulting synthesized netlist by `OpenSTA`.
+
+
+--> Inorder to perform synthesis, you will need:
+* `.v` of the avsddac and its `.libs` file.
+* To generate the `.libs` run the perl script given on this link `https://vlsi.pro/creating-lib-file-from-verilog/`, with the command given below. 
+
+`perl verilog_to_lib.pl avsddac.v avsddac`
+
+
+--> To open `yosys` , just type `yosys` in OpenLANE.
+
+Follow the script: 
+
+`read_verilog rvmyth_avsddac_interface.v 
+
+read_liberty -lib avsddac.lib
+
+read_liberty -lib sky130_fd_sc_hd__tt_025C_1v80.lib
+
+synth -top rvmyth_avsddac_interface
+
+dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+
+opt
+
+abc -liberty sky130_fd_sc_hd__tt_025C_1v80.lib -script +strash;scorr;ifraig;retime;{D};strash;dch,-f;map,-M,1,{D}
+
+flatten
+
+setundef -zero
+
+clean -purge
+
+rename -enumerate
+
+stat
+
+write_verilog -noattr rvmyth_avsddac.synth.v`
+
+
+
+
+The synthesized netlist can be found here. 
+
+
 
 
 
