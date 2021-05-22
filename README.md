@@ -102,31 +102,31 @@ The OpenLANE and sky130 installation can be done by following the steps in this 
 
 Follow the script: 
 
-`read_verilog rvmyth_avsddac_interface.v 
+`read_verilog rvmyth_avsddac_interface.v` 
 
-read_liberty -lib avsddac.lib
+`read_liberty -lib avsddac.lib`
 
-read_liberty -lib sky130_fd_sc_hd__tt_025C_1v80.lib
+`read_liberty -lib sky130_fd_sc_hd__tt_025C_1v80.lib`
 
-synth -top rvmyth_avsddac_interface
+`synth -top rvmyth_avsddac_interface`
 
-dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+`dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80.lib`
 
-opt
+`opt`
 
-abc -liberty sky130_fd_sc_hd__tt_025C_1v80.lib -script +strash;scorr;ifraig;retime;{D};strash;dch,-f;map,-M,1,{D}
+`abc -liberty sky130_fd_sc_hd__tt_025C_1v80.lib -script +strash;scorr;ifraig;retime;{D};strash;dch,-f;map,-M,1,{D}`
 
-flatten
+`flatten`
 
-setundef -zero
+`setundef -zero`
 
-clean -purge
+`clean -purge`
 
-rename -enumerate
+`rename -enumerate`
 
-stat
+`stat`
 
-write_verilog -noattr rvmyth_avsddac.synth.v`
+`write_verilog -noattr rvmyth_avsddac.synth.v`
 
 
 
