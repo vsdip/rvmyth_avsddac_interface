@@ -102,6 +102,8 @@ The OpenLANE and sky130 installation can be done by following the steps in this 
 
 --> Then follow the script: 
 
+```
+{
 `read_verilog rvmyth_avsddac_interface.v` 
 
 `read_liberty -lib avsddac.lib`
@@ -127,7 +129,9 @@ The OpenLANE and sky130 installation can be done by following the steps in this 
 `stat`
 
 `write_verilog -noattr rvmyth_avsddac.synth.v`
+}
 
+```
 
 The synthesized netlist can be found here. 
 
