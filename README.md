@@ -87,7 +87,7 @@ The OpenLANE and sky130 installation can be done by following the steps in this 
 ### 1.) `Synthesis`
 
 * In OpenLANE the RTL synthesis is performed by `yosys`.
-* The technolgy mapping is performed by `ABC`.
+* The technolgy mapping is performed by `abc`.
 * Finally, the timing reports are generated for the resulting synthesized netlist by `OpenSTA`.
 
 
