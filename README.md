@@ -100,7 +100,7 @@ The OpenLANE and sky130 installation can be done by following the steps in this 
 
 --> To open `yosys` , just type `yosys` in OpenLANE.
 
-Follow the script: 
+--> Then follow the script: 
 
 `read_verilog rvmyth_avsddac_interface.v` 
 
@@ -129,10 +129,21 @@ Follow the script:
 `write_verilog -noattr rvmyth_avsddac.synth.v`
 
 
-
-
 The synthesized netlist can be found here. 
 
+--> Now, simulate the generated netlist in `iverilog` & `gtkwave` to compare the pre - synthesis and post- synthesis simulations. 
+
+*Both pre-synth and post-synth simulations must give out the same output.*
+
+Pre -synthesis Simulation:
+
+![image](https://user-images.githubusercontent.com/79994584/119227610-62793d80-bb2c-11eb-96e4-84e7801556f6.png)
+
+
+
+Post-synthesis Simulation : 
+
+![image](https://user-images.githubusercontent.com/79994584/119227589-4c6b7d00-bb2c-11eb-8396-785390399740.png)
 
 
 
