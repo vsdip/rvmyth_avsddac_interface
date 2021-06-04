@@ -38,7 +38,7 @@
 3. Design the 10-bit DAC using the given specs in verilog and test for its correct functionality.
 
      1. `iverilog avsddac.v avsddac_tb_test.v`
-     2. `./a/out`
+     2. `./a.out`
      3. `gtkwave avsddac_tb_test.vcd`
 
 
@@ -57,7 +57,7 @@
 
 
    1. `iverilog rvmyth_avsddac_interface.v rvmyth_avsddac_interface_TB.v`
-   2. `./a/out`
+   2. `./a.out`
    3. `gtkwave rvmyth_avsddac_interface_TB.vcd`
 
 
