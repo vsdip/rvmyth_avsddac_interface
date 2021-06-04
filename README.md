@@ -98,7 +98,7 @@ The OpenLANE and sky130 installation can be done by following the steps in this 
 `perl verilog_to_lib.pl avsddac.v avsddac`
 
 
---> To open `yosys` , just type `yosys` in OpenLANE.
+--> To open `yosys` , just type `yosys` in linux shell.
 
 --> Then follow the script: 
 
