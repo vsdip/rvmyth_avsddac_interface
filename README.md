@@ -224,7 +224,7 @@ In the layout window press 'v' on the keyboard for the full view or go to the op
 
 ![image](https://user-images.githubusercontent.com/79994584/121801229-ed44e800-cc53-11eb-9476-f431f851474a.png)
 
-now, using layout left and right mouse click make a box around the layout:
+now, using left and right mouse click make a box around the layout:
 
 ![image](https://user-images.githubusercontent.com/79994584/121801320-66443f80-cc54-11eb-88b5-34165b541aef.png)
 
@@ -256,7 +256,7 @@ Before beginning with the layout modifications, one must be familiar with the fo
   - `Shift+z` : To zoom out the layout.
   - Use the arrow keys to navigate across the layout. 
 
-**To convert the labels into ports, select that particular layer where the label is present and then go to the `Edit-->Text`. A text helper window opens up in which specify the following field:
+**To convert the labels into ports, select that particular layer where the label is present and then go to the `Edit-->Text`. A text helper window opens up in which specify the following field** :
 
   - `Text string`: Here give the desirable port name for the selected layer. ( *Make sure that the port names are same as the ones used in the RTL code, else the floorplanning stage would prompt error* ) 
   - `Size (um)` : This specifies the size of the port name. 
