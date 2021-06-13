@@ -337,6 +337,162 @@ In addition to the making of ports, there are certain other fields which are to 
        port use signal
        ```
 
+![image](https://user-images.githubusercontent.com/79994584/121813865-9955f580-cc8b-11eb-9f01-0a28862af6f3.png)
+
+
+![image](https://user-images.githubusercontent.com/79994584/121813838-762b4600-cc8b-11eb-9f9b-76c3b36e3e20.png)
+
+
+# Physical Design flow in Openlane using sky130 
+
+
+## Adding a new project
+
+In the `designs` directory, create a folder with the name of the project.
+
+```
+cd designs
+mkdir rvmyth_avsddac
+```
+
+## Setting up the new project
+
+Go to the `~/openlane_working_dir/openlane` and execute the following commands:
+
+```javascript 
+export PDK_ROOT=<absolute path to where skywater-pdk and open_pdks reside>
+```
+
+```javascript
+docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) openlane:rc6
+```
+
+```javascript
+ ./flow.tcl -design rvmyth_avsddac -init_design_config
+```
+
+
+This creates a `config.tcl` file with default settings, here the setting of environment variables will be done. This file also contains the reason for some configurations as comments.
+
+The information about the environment variables and their default values can be found [here]https://github.com/The-OpenROAD-Project/OpenLane/blob/master/configuration/README.md.
+
+
+## Adding the input files
+
+## Verilog files
+
+The `.v` and `.libs` input files are to added under `~/designs/rvmyth_avsddac/src/verilog` directory. 
+
+  - The top level module is `rvmyth_avsddac.v`.
+  - The verilog file of the macro is `avsddac.v`.
+  - `mythcore_test.v` , `sp_verilog.vh` , `clk_gate.v` , `mythcore_test_gen.v` , `sandpiper_gen.vh` ,`sandpiper.vh` are the files to be included in the design.
+
+
+## LEF file
+
+The LEF file `avsddac.v` obtained must be included in `~/designs/rvmyth_avsddac/src/lef` directory.
+
+
+# The Flow
+
+To harden the macro, the interactive flow in openlane is used: 
+
+Go to the `~/openlane_working_dir/openlane` and execute the following:
+
+```javascript 
+export PDK_ROOT=<absolute path to where skywater-pdk and open_pdks reside>
+```
+
+```javascript
+docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) openlane:rc6
+```
+
+A bash window will open where the interactive flow is executed.
+
+```javascript
+ ./flow.tcl -design rvmyth_avsddac -interactive
+```
+
+## Setting up the Flow
+
+Execute the following commands: 
+
+```
+package require openlane 0.9
+```
+
+```
+prep -design rvmyth_avsddac -overwrite
+```
+
+
+Adding the LEF file for macro: 
+```
+set lefs 	 [glob $::env(DESIGN_DIR)/src/lef/*.lef]
+```
+
+```
+add_lefs -src $lefs
+```
+
+```
+**SYNTHESIS**
+```
+
+```
+run_synthesis
+```
+
+The output files can be found here.[]
+
+
+```
+**FLOORPLANNING**
+```
+
+```
+init_floorplan
+```
+
+```
+**IO Placement**
+```
+
+```
+place_io
+```
+
+
+```
+**Placement**
+```
+
+```
+global_placement_or
+```
+
+```
+detailed_placement
+```
+
+```
+tap_decap_or
+```
+
+```
+detailed_placement
+```
+
+After final placement, the layout can be viewed in magic using merged LEF and DEF file. The DEF file can be found here.[]
+
+```
+magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.placement.def
+```
+
+
+
+
+
 
 
 
