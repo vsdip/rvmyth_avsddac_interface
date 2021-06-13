@@ -84,7 +84,7 @@ The OpenLANE and sky130 installation can be done by following the steps in this 
 
 * After finishing off the installation, the first step in the design flow is to synthesize the generated RTL code. 
 
-### 1.) `Synthesis`
+### `Synthesis`
 
 * In OpenLANE the RTL synthesis is performed by `yosys`.
 * The technolgy mapping is performed by `abc`.
@@ -169,6 +169,16 @@ The synthesized netlist can be found here.
 **Post-synthesis Simulation:** 
 
 ![image](https://user-images.githubusercontent.com/79994584/119227589-4c6b7d00-bb2c-11eb-8396-785390399740.png)
+
+
+
+## SoC Physical Design 
+
+Inorder to carry out the physical design flow, following input files are required to get started:
+
+- Top level verilog module : `rvmyth_avsddac.v`
+- LIB file : `avsddac.lib`
+- LEF file : `avsddac.lef`
 
 
 
