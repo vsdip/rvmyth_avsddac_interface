@@ -220,10 +220,18 @@ Two windows will open; the layout window and the tckon window.
 ![image](https://user-images.githubusercontent.com/79994584/121801164-88898d80-cc53-11eb-873e-02ff4c40cb4d.png)
 
 
+In the layout window press 'v' on the keyboard for the full view or go to the option `Window ---> Full view`.
 
-In the layout window go to : `Cell --> Expand` to see the complete layout of 10-bit DAC. 
+![image](https://user-images.githubusercontent.com/79994584/121801229-ed44e800-cc53-11eb-9476-f431f851474a.png)
 
-![image](https://user-images.githubusercontent.com/79994584/121800808-8b837e80-cc51-11eb-9dd4-343cbc120e76.png)
+now, using layout left and right mouse click make a box around the layout:
+
+![image](https://user-images.githubusercontent.com/79994584/121801320-66443f80-cc54-11eb-88b5-34165b541aef.png)
+
+
+then, go to : `Cell ---> Expand` to see the complete layout of 10-bit DAC:
+
+![image](https://user-images.githubusercontent.com/79994584/121801355-896eef00-cc54-11eb-9d8a-892162b7b985.png)
 
 
 Now, using the following command in tckon window dump out the `.lef` file :
