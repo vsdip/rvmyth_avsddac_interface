@@ -215,6 +215,9 @@ magic -T `/sky130A.tech ~/10bitdac_cap_layout_design.mag
 Two windows will open; the layout window and the tckon window. In the layout window go to : `Cell --> Expand` to see the complete layout of 10-bit DAC. 
 
 
+file:///home/mansi/Pictures/Screenshot%20from%202021-05-25%2015-47-42.png![image](https://user-images.githubusercontent.com/79994584/121800733-321b4f80-cc51-11eb-9721-ea53bb3d0143.png)
+
+
 ![image](https://user-images.githubusercontent.com/79994584/121799046-6d188580-cc47-11eb-9701-297ec2a75dcc.png)
 
 Using the following command in tckon window dump out the `.lef` file :
