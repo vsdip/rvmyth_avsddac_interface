@@ -260,12 +260,13 @@ Before beginning with the layout modifications, one must be familiar with the fo
 
   - `Text string`: Here give the desirable port name for the selected layer. ( *Make sure that the port names are same as the ones used in the RTL code, else the floorplanning stage would prompt error* ) 
   - `Size (um)` : This specifies the size of the port name. 
-  - `Attach to layer` : Here select the `sticky` and specify the layer. ( *here the selected layer is locali* ) 
+  - `Attach to layer` : Here select the `sticky` and specify the layer. (*here the selected layer is locali*) 
   - `Port` : Check the `enable` option.
 
 `Apply` and `Okay`
 
 ![image](https://user-images.githubusercontent.com/79994584/121802367-87f3f580-cc59-11eb-949c-1bd25f666296.png)
+
 
 
 
