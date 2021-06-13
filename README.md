@@ -254,6 +254,7 @@ Before beginning with the layout modifications, one must be familiar with the fo
   - `s` : To select a particular layer. ( Place the cursor on that layer and type `s` ) 
   - `z` : To zoom in the layout.
   - `Shift+z` : To zoom out the layout.
+  - `g` : To enable grid option.
   - Use the arrow keys to navigate across the layout. 
 
 **To convert the labels into ports, select that particular layer where the label is present and then go to the `Edit-->Text`. A text helper window opens up in which specify the following field** :
@@ -280,10 +281,61 @@ To verify if the port is made, in the tckon window:
 port name
 ```
 
+
 ![image](https://user-images.githubusercontent.com/79994584/121804659-220d6b00-cc65-11eb-8105-420b16ac50c7.png)
 
 
-*Similarly repeat the above steps for all the required labels.*
+*Similarly repeat the above steps for all the required pins.*
+
+
+Again dump out the `LEF` file by:
+
+```
+lef write avsddac.lef
+```
+
+## Other important fields of LEF file
+
+In addition to the making of ports, there are certain other fields which are to be included in the LEF file for it to be accepted by the openlane tool. Use the tckon window to add the following commands:
+
+- ` CLASS CORE ` 
+```
+ property LEFclass CORE
+```
+
+- `DIRECTION`
+
+    - For input pins: 
+      ```
+      port class input
+      ```
+      
+    - For output pins:
+      ```
+      port class output
+      ```
+      
+    - For power and ground pins: 
+      ```
+      port class inout
+      ```
+      
+- `USE` 
+
+    - For power pin:
+      ```
+      port use power
+      ```
+      
+     - For ground pin:
+      ```
+      port use ground
+      ```
+      
+     - For other pins:
+      ```
+      port use signal
+      ```
 
 
 
