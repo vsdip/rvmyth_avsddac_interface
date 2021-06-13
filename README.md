@@ -217,10 +217,7 @@ Two windows will open; the layout window and the tckon window. In the layout win
 ![image](https://user-images.githubusercontent.com/79994584/121800808-8b837e80-cc51-11eb-9dd4-343cbc120e76.png)
 
 
-
-![image](https://user-images.githubusercontent.com/79994584/121799046-6d188580-cc47-11eb-9701-297ec2a75dcc.png)
-
-Using the following command in tckon window dump out the `.lef` file :
+Now, using the following command in tckon window dump out the `.lef` file :
 
 ```
 lef write avsddac.lef
