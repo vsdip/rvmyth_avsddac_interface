@@ -188,6 +188,20 @@ The magic layout files can be found here ( ).
 Using the magic layout files and the tech file i.e. `sky130A.tech` lef file can be generated after implementing certain modifications to the layout. 
 
 
+## Obtaining verilog files
+
+The project related verilog files and their respective testbench can be found here (). 
+
+
+
+![image](https://user-images.githubusercontent.com/79994584/121798255-e1045f00-cc42-11eb-93fa-b2664a9963ac.png)
+
+
+
+
+
+
+
 
 
 
