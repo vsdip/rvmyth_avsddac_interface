@@ -264,7 +264,7 @@ Before beginning with the layout modifications, one must be familiar with the fo
 ![image](https://user-images.githubusercontent.com/79994584/121804058-1c625600-cc62-11eb-9544-216cdaf7c1e8.png)
 
 
-  - `Text string`: Here give the desirable port name for the selected layer. ( *Make sure that the port names are same as the ones used in the RTL code, else the floorplanning stage would prompt error* ) 
+  - `Text string`: Here give the desirable port name for the selected layer. ( *Make sure that the port names are same as the ones used in the RTL code, else the floorplanning stage would prompt an error* ) 
   - `Size (um)` : This specifies the size of the port name. 
   - `Attach to layer` : Here check the `sticky`, uncheck the `default` and specify the layer. (*here the selected layer is locali*) 
   - `Port` : Check the `enable` option.
@@ -273,6 +273,21 @@ Before beginning with the layout modifications, one must be familiar with the fo
 
 
 ![image](https://user-images.githubusercontent.com/79994584/121804072-3308ad00-cc62-11eb-815a-df79c77f6de4.png)
+
+To verify if the port is made, in the tckon window: 
+
+```
+port name
+```
+
+![image](https://user-images.githubusercontent.com/79994584/121804659-220d6b00-cc65-11eb-8105-420b16ac50c7.png)
+
+
+*Similarly repeat the above steps for all the required labels.*
+
+
+
+
 
 
 
