@@ -172,7 +172,7 @@ The synthesized netlist can be found here.
 
 
 
-## SoC Physical Design 
+# SoC Physical Design 
 
 Inorder to carry out the physical design flow, following input files are required to get started:
 
@@ -180,9 +180,18 @@ Inorder to carry out the physical design flow, following input files are require
 - LIB file : `avsddac.lib`
 - LEF file : `avsddac.lef`
 
-### Obtaining IP 
+## Obtaining IP 
 
 The Digital to Analog Converter (DAC) for sky130 techonology is available in the following repository https://github.com/vsdip/avsddac_3v3_sky130_v1.git, it contains all the magic layout files which will be subsequently required for obtaining the `avsddac.lef` for the 10-bit DAC. 
+The magic layout files can be found here ( ). 
+
+Using the magic layout files and the tech file i.e. `sky130A.tech` lef file can be generated after implementing certain modifications to the layout. 
+
+
+
+
+
+
 
 
 
