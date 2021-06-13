@@ -212,7 +212,15 @@ ii.  Then open Magic Tool using the below command:
 magic -T `/sky130A.tech ~/10bitdac_cap_layout_design.mag
 ```
 
-Two windows will open; the layout window and the tckon window. In the layout window go to : `Cell --> Expand` to see the complete layout of 10-bit DAC. 
+Two windows will open; the layout window and the tckon window. 
+
+![image](https://user-images.githubusercontent.com/79994584/121801029-cb973100-cc52-11eb-9978-860de6661387.png)
+
+
+![Uploading image.png…]()
+
+
+In the layout window go to : `Cell --> Expand` to see the complete layout of 10-bit DAC. 
 
 ![image](https://user-images.githubusercontent.com/79994584/121800808-8b837e80-cc51-11eb-9dd4-343cbc120e76.png)
 
