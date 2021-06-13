@@ -247,6 +247,29 @@ After opening the lef file ( `avsddac.lef` ) it is observed that there are no pi
 These changes must be executed else the LEF file would not be accepted by the PnR tools.
 
 
+## Resolving the pin issue
+
+Before beginning with the layout modifications, one must be familiar with the following useful shortcut keys in magic: 
+
+  - `s` : To select a particular layer. ( Place the cursor on that layer and type `s` ) 
+  - `z` : To zoom in the layout.
+  - `Shift+z` : To zoom out the layout.
+  - Use the arrow keys to navigate across the layout. 
+
+**To convert the labels into ports, select that particular layer where the label is present and then go to the `Edit-->Text`. A text helper window opens up in which specify the following field:
+
+  - `Text string`: Here give the desirable port name for the selected layer. ( *Make sure that the port names are same as the ones used in the RTL code, else the floorplanning stage would prompt error* ) 
+  - `Size (um)` : This specifies the size of the port name. 
+  - `Attach to layer` : Here select the `sticky` and specify the layer. ( *here the selected layer is locali* ) 
+  - `Port` : Check the `enable` option.
+
+`Apply` and `Okay`
+
+![image](https://user-images.githubusercontent.com/79994584/121802367-87f3f580-cc59-11eb-949c-1bd25f666296.png)
+
+
+
+
 
 
 
