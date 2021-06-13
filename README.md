@@ -217,7 +217,8 @@ Two windows will open; the layout window and the tckon window.
 ![image](https://user-images.githubusercontent.com/79994584/121801029-cb973100-cc52-11eb-9978-860de6661387.png)
 
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/79994584/121801164-88898d80-cc53-11eb-873e-02ff4c40cb4d.png)
+
 
 
 In the layout window go to : `Cell --> Expand` to see the complete layout of 10-bit DAC. 
