@@ -182,7 +182,7 @@ Inorder to carry out the physical design flow, following input files are require
 
 ### Obtaining IP 
 
-The Digital to Analog Converter (DAC) for sky130 techonology is available in the following repository [https://github.com/vsdip/avsddac_3v3_sky130_v1.git], it contains all the magic layout files which will be subsequently required for obtaining the `avsddac.lef` for the 10-bit DAC. 
+The Digital to Analog Converter (DAC) for sky130 techonology is available in the following repository [https://github.com/vsdip/avsddac_3v3_sky130_v1.git] (https://github.com/vsdip/avsddac_3v3_sky130_v1.git), it contains all the magic layout files which will be subsequently required for obtaining the `avsddac.lef` for the 10-bit DAC. 
 
 
 
