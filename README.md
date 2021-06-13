@@ -435,9 +435,7 @@ set lefs 	 [glob $::env(DESIGN_DIR)/src/lef/*.lef]
 add_lefs -src $lefs
 ```
 
-```
-**SYNTHESIS**
-```
+## SYNTHESIS
 
 ```
 run_synthesis
@@ -446,26 +444,22 @@ run_synthesis
 The output files can be found here.[]
 
 
-```
-**FLOORPLANNING**
-```
+## FLOORPLANNING
 
 ```
 init_floorplan
 ```
 
-```
-**IO Placement**
-```
+
+## IO Placement
+
 
 ```
 place_io
 ```
 
+## Placement
 
-```
-**Placement**
-```
 
 ```
 global_placement_or
