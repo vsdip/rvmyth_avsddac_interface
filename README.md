@@ -328,14 +328,14 @@ In addition to the making of ports, there are certain other fields which are to 
       ```
       
      - For ground pin:
-      ```
-      port use ground
-      ```
+       ```
+       port use ground
+       ```
       
      - For other pins:
-      ```
-      port use signal
-      ```
+       ```
+       port use signal
+       ```
 
 
 
