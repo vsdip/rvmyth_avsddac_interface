@@ -217,6 +217,19 @@ Two windows will open; the layout window and the tckon window. In the layout win
 
 ![image](https://user-images.githubusercontent.com/79994584/121799046-6d188580-cc47-11eb-9701-297ec2a75dcc.png)
 
+Using the following command in tckon window dump out the `.lef` file :
+
+```
+lef write avsddac.lef
+```
+
+## Limitations of current IP Layouts
+
+After opening the lef file ( `avsddac.lef` ) it is observed that there are no pins descriptions available for the design, instead only the labels are present in the layout window. Also certain fields which must be present in the lef file are found missing. Hence, the first task is to convert those labels into pins by carefully modifying the layout. 
+
+These changes are important to be executed else the LEF file would not be accepted by the PnR tools.
+
+
 
 
 
