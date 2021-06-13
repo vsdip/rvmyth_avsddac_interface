@@ -198,6 +198,30 @@ The project related verilog files and their respective testbench can be found he
 
 
 
+## Generating LEF file
+
+i. Firstly, git clone this repository `https://github.com/vsdip/avsddac_3v3_sky130_v1.git` 
+
+```
+git clone https://github.com/vsdip/avsddac_3v3_sky130_v1.git
+```
+
+ii.  Then open Magic Tool using the below command: 
+
+```
+magic -T `/sky130A.tech ~/10bitdac_cap_layout_design.mag
+```
+
+Two windows will open; the layout window and the tckon window. In the layout window go to : `Cell --> Expand` to see the complete layout of 10-bit DAC. 
+
+
+![image](https://user-images.githubusercontent.com/79994584/121799046-6d188580-cc47-11eb-9701-297ec2a75dcc.png)
+
+
+
+
+
+
 
 
 
