@@ -227,7 +227,7 @@ lef write avsddac.lef
 
 After opening the lef file ( `avsddac.lef` ) it is observed that there are no pins descriptions available for the design, instead only the labels are present in the layout window. Also certain fields which must be present in the lef file are found missing. Hence, the first task is to convert the labels into pins by carefully modifying the layout. 
 
-These changes are important to be executed else the LEF file would not be accepted by the PnR tools.
+These changes must be executed else the LEF file would not be accepted by the PnR tools.
 
 
 
