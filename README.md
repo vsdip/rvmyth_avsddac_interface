@@ -17,8 +17,24 @@
     - [Obtaining verilog files](#obtaining-verilog-files)
     - [Generating LEF file](#generating-lef-file)
     - [Limitations of current IP Layouts](#limitations-of-current-ip-layouts)
-   
-   
+    - [Resolving the pin issue](#resolving-pin-issue)
+    - [Other important fields of LEF file](#other-important-fields-of-lef-file)
+    - [Experiments with openlane and sky130](#experiments-with-openlane-and-sky130)
+       - [Adding a new project](#adding-a-new-project)
+       - [Setting up the new project](#setting-up-the-new-project)
+       - [Adding the input files](#adding-the-input-files)
+       - [Verilog files](#verilog-files)
+       - [LEF file](#lef-file)
+
+     - [The Flow](#the-flow)
+       - [Setting up the Flow](#setting-up-the-flow)
+       - [SYNTHESIS](#synthesis)
+       - [FLOORPLANNING](#floorplanning)
+       - [IO Placement](#io-placement)
+       - [PLACEMENT](#placement)
+     - [Key points to remember](#key-points-to-remember)
+- [Acknowledgement](#acknowledgement)
+  
 
 ### Problem Statement 
 --------------------------
@@ -310,7 +326,7 @@ In addition to the making of ports, there are certain other fields which are to 
 ![image](https://user-images.githubusercontent.com/79994584/121813838-762b4600-cc8b-11eb-9f9b-76c3b36e3e20.png)
 
 
-# Physical Design flow in Openlane using sky130 
+# Experiments with openlane and sky130
 
 
 ## Adding a new project
