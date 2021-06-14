@@ -158,21 +158,22 @@ The synthesized netlist can be found here.
 
 --> Now, simulate the generated netlist in `iverilog` & `gtkwave` to compare the pre - synthesis and post- synthesis simulations. 
 
+For that you'd need to create a verilog code for gate level simulation that would include the synthesized netlist verilog file obtained from yosys. The files necessary for pre and post synthesis can be found here.
+
 *Both pre-synth and post-synth simulations must give out the same output.*
 
 **Pre -synthesis Simulation:**
-
-![image](https://user-images.githubusercontent.com/79994584/119227610-62793d80-bb2c-11eb-96e4-84e7801556f6.png)
-
+![image](https://user-images.githubusercontent.com/82170364/121861342-5e999f00-cd17-11eb-8c43-b7402b03dabb.png)
 
 
 **Post-synthesis Simulation:** 
+![image](https://user-images.githubusercontent.com/82170364/121860841-e0d59380-cd16-11eb-9e1c-2440c018842a.png)
 
-![image](https://user-images.githubusercontent.com/79994584/119227589-4c6b7d00-bb2c-11eb-8396-785390399740.png)
+## OpenSTA
+To perform sta in the tool we need to create sdc and config file. Both can be found here.
 
-### OpenSTA
-
-
+### Timing report
+![image](https://user-images.githubusercontent.com/82170364/121860402-6dcc1d00-cd16-11eb-9f4a-43a131e8b82e.png)
 
 
 # SoC Physical Design 
