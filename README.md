@@ -46,13 +46,7 @@ First, we will need to generate a verilog module for DAC and obtain the analog o
 
 
 **DAC Output in Analog Step format:**
-
-
-![image](https://user-images.githubusercontent.com/79994584/117964966-e0c12d00-b33f-11eb-9079-a90298242154.png)
-
-
-![image](https://user-images.githubusercontent.com/79994584/117965181-19610680-b340-11eb-969a-e53775460774.png)
-
+![image](https://user-images.githubusercontent.com/82170364/121874571-1a150000-cd25-11eb-8974-8d6ad7d74991.png)
 
 
 4. Finally integrate both rvymth and DAC using a Top level module and test it to verify the correctness of the integration.
