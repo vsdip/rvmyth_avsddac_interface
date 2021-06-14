@@ -33,7 +33,6 @@
        - [IO Placement](#io-placement)
        - [PLACEMENT](#placement)
      - [Key points to remember](#key-points-to-remember)
-     - [Future work](#future-work)
 - [Acknowledgement](#acknowledgement)
   
 
@@ -339,8 +338,6 @@ cd designs
 mkdir rvmyth_avsddac
 ```
 
-![image](https://user-images.githubusercontent.com/79994584/121949672-5c1a6200-cd76-11eb-98fa-e30563b90975.png)
-
 
 ## Setting up the new project
 
@@ -476,9 +473,7 @@ After final placement, the layout can be viewed in magic using merged LEF and DE
 magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.placement.def
 ```
 
-![image](https://user-images.githubusercontent.com/79994584/121948237-9daa0d80-cd74-11eb-9e5e-a997c3b385b2.png)
 
-![image](https://user-images.githubusercontent.com/79994584/121948329-be726300-cd74-11eb-9293-a88603d81055.png)
 
 
 
