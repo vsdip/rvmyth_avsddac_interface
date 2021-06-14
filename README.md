@@ -88,7 +88,9 @@ Inorder to perform synthesis, you will need:
 * Verilog file(.v) of the avsddac and its LIB(.lib) file.
 * To generate the LIB file run the perl script given on this [link](https://vlsi.pro/creating-lib-file-from-verilog/), with the command given below. 
 
-`perl verilog_to_lib.pl avsddac.v avsddac`
+```javascript
+perl verilog_to_lib.pl avsddac.v avsddac
+```
 
 To perform synthesys in yosys
 --> Just type `yosys` in linux shell.
@@ -148,13 +150,13 @@ The project related design files  can be found [here](https://github.com/vsdip/r
 
 i. Firstly, git clone this repository `https://github.com/vsdip/avsddac_3v3_sky130_v1.git` 
 
-```
+```javascript
 git clone https://github.com/vsdip/avsddac_3v3_sky130_v1.git
 ```
 
 ii.  Then open Magic Tool using the below command: 
 
-```
+```javascript
 magic -T `/sky130A.tech ~/10bitdac_cap_layout_design.mag
 ```
 
@@ -182,7 +184,7 @@ then, go to : `Cell ---> Expand` to see the complete layout of 10-bit DAC:
 
 Now, using the following command in tckon window dump out the `.lef` file :
 
-```
+```javascript
 lef write avsddac.lef
 ```
 
@@ -223,7 +225,7 @@ Before beginning with the layout modifications, one must be familiar with the fo
 
 To verify if the port is made, in the tckon window: 
 
-```
+```javascript
 port name
 ```
 
@@ -236,7 +238,7 @@ port name
 
 Again dump out the `LEF` file by:
 
-```
+```javascript
 lef write avsddac.lef
 ```
 
@@ -296,7 +298,7 @@ In addition to the making of ports, there are certain other fields which are to 
 
 In the `designs` directory, create a folder with the name of the project.
 
-```
+```javascript
 cd designs
 mkdir rvmyth_avsddac
 ```
@@ -363,27 +365,27 @@ A bash window will open where the interactive flow is executed.
 
 Execute the following commands: 
 
-```
+```javascript
 package require openlane 0.9
 ```
 
-```
+```javascript
 prep -design rvmyth_avsddac -overwrite
 ```
 
 
 Adding the LEF file for macro: 
-```
+```javascript
 set lefs 	 [glob $::env(DESIGN_DIR)/src/lef/*.lef]
 ```
 
-```
+```javascript
 add_lefs -src $lefs
 ```
 
 ## SYNTHESIS
 
-```
+```javascript
 run_synthesis
 ```
 
@@ -392,7 +394,7 @@ The output files can be found here.[]
 
 ## FLOORPLANNING
 
-```
+```javascript
 init_floorplan
 ```
 After floorplanning, the layout can be viewed in magic using the `merged.lef` and the DEF file. The DEF file can be found here.[]
@@ -409,33 +411,33 @@ magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.floorplan.
 ## IO Placement
 
 
-```
+```javascript
 place_io
 ```
 
 ## Placement
 
 
-```
+```javascript
 global_placement_or
 ```
 
-```
+```javascript
 detailed_placement
 ```
 
-```
+```javascript
 tap_decap_or
 ```
 
-```
+```javascript
 detailed_placement
 ```
 
 After final placement, the layout can be viewed in magic using merged LEF and DEF file. The DEF file can be found here.[]
 
 
-```
+```javascript
 magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.placement.def
 ```
 
