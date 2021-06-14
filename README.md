@@ -439,9 +439,6 @@ After floorplanning, the layout can be viewed in magic using the `merged.lef` an
 magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.floorplan.def
 ```
 
-![image](https://user-images.githubusercontent.com/79994584/121905378-b9e38580-cd47-11eb-9eb5-d2ab74d79fa4.png)
-
-
 
 ## IO Placement
 
@@ -476,11 +473,9 @@ After final placement, the layout can be viewed in magic using merged LEF and DE
 magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.placement.def
 ```
 
-![image](https://user-images.githubusercontent.com/79994584/121887900-f9ed3d00-cd34-11eb-9ada-6691cb77eb22.png)
+![image](https://user-images.githubusercontent.com/79994584/121948237-9daa0d80-cd74-11eb-9e5e-a997c3b385b2.png)
 
-![image](https://user-images.githubusercontent.com/79994584/121925490-9aa22380-cd5a-11eb-95e2-71b924c37c0f.png)
-
-![image](https://user-images.githubusercontent.com/79994584/121888015-1a1cfc00-cd35-11eb-840d-5d205e65c41c.png)
+![image](https://user-images.githubusercontent.com/79994584/121948329-be726300-cd74-11eb-9293-a88603d81055.png)
 
 
 
