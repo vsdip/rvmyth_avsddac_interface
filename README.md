@@ -1,4 +1,4 @@
-# rvmyth_avsddac_interface
+# SoC design using RISC-V based core and 10-bit DAC Sky130 IP
 
 *The purpose of this project is to integrate rvmyth (RISC-V) with digital to analog converter (DAC) and perform PNR using end-to-end open-source EDA tools. It also discusses the steps to modify the current IP layouts inorder to ensure its acceptance by the EDA tools.*
 
@@ -482,10 +482,15 @@ magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.placement.
 ![image](https://user-images.githubusercontent.com/79994584/121888015-1a1cfc00-cd35-11eb-840d-5d205e65c41c.png)
 
 
+
+
 ## Key points to remember 
 
 - Make sure that the port names are same as the ones used in the RTL code, else the floorplanning stage would prompt an error.
 - Keep the design name and verilog file name same as the top module name.
+
+## Future work
+
 
 # Acknowledgement
 
