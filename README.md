@@ -377,7 +377,7 @@ docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_
 
 This creates a `config.tcl` file with default settings, here the setting of environment variables will be done. This file also contains the reason for some configurations as comments.
 
-The information about the environment variables and their default values can be found [here]https://github.com/The-OpenROAD-Project/OpenLane/blob/master/configuration/README.md.
+The information about the environment variables and their default values can be found [here https://github.com/The-OpenROAD-Project/OpenLane/blob/master/configuration/README.md.
 
 
 ## Adding the input files
