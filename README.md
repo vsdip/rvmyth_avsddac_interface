@@ -136,7 +136,7 @@ Using the magic layout files and the tech file i.e. `sky130A.tech` lef file can 
 
 ## Obtaining verilog files
 
-The project related verilog files and their respective testbench can be found here (). 
+The project related design files  can be found [here](https://github.com/vsdip/rvmyth_avsddac_interface/tree/main/design). 
 
 
 
