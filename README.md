@@ -14,9 +14,9 @@
 - [SoC Physical Design](#soc-physical-design)
 
     - [Obtaining IP](#obtaining-ip)
-        - [Obtaining verilog files](#obtaining-verilog-files)
-        - [Generating LEF file](#generating-lef-file)
-        - [Limitations of current IP Layouts](#limitations-of-current-ip-layouts)
+    - [Obtaining verilog files](#obtaining-verilog-files)
+    - [Generating LEF file](#generating-lef-file)
+    - [Limitations of current IP Layouts](#limitations-of-current-ip-layouts)
    
    
 
