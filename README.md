@@ -338,8 +338,7 @@ In the `designs` directory, create a folder with the name of the project.
 cd designs
 mkdir rvmyth_avsddac
 ```
-![image](https://user-images.githubusercontent.com/79994584/121950716-9f290500-cd77-11eb-9568-5e72f3114fc9.png)
-
+![image](https://user-images.githubusercontent.com/79994584/121952212-946f6f80-cd79-11eb-8317-4b3875f6eed6.png)
 
 
 ## Setting up the new project
@@ -489,7 +488,8 @@ magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.placement.
 - Keep the design name and verilog file name same as the top module name.
 
 ## Future work
-
+ 
+- To complete the PNR proceeding with routing and completing the SoC design with final layout generation. 
 
 # Acknowledgement
 
