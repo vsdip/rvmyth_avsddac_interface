@@ -1,6 +1,6 @@
 # rvmyth_avsddac_interface
 
-*The purpose of this project is to integrate rvmyth (RISC-V) with digital to analog converter (DAC) using end-to-end open-source EDA tools. To achieve this, firstly we will need to generate a verilog module for DAC and obtain the analog output reciprocation for some arbitrary digital inputs to test it. Later we will give the digital output of rvmyth to the 10-bit DAC by creating an interface between the two analog and digital blocks.*
+*The purpose of this project is to integrate rvmyth (RISC-V) with digital to analog converter (DAC) and perform PNR using end-to-end open-source EDA tools. It also discusses the steps to modify the current IP layouts inorder to ensure its acceptance by the EDA tools.*
 
 #### Required Tools
 
@@ -16,6 +16,8 @@
 ------------------------
 
 ![image](https://user-images.githubusercontent.com/79994584/117629351-b5034300-b197-11eb-91d6-9cf9b3fb74b4.png)
+
+First, we will need to generate a verilog module for DAC and obtain the analog output reciprocation for some arbitrary digital inputs to test it. Later we will give the digital output of rvmyth to the 10-bit DAC by creating an interface between the two analog and digital blocks.
 
 
 ## Steps to follow
@@ -84,22 +86,20 @@ The OpenLANE and sky130 installation can be done by following the steps in this 
 
 * After finishing off the installation, the first step in the design flow is to synthesize the generated RTL code. 
 
-### `Synthesis`
+### Synthesis in yosys
 
 * In OpenLANE the RTL synthesis is performed by `yosys`.
 * The technolgy mapping is performed by `abc`.
 * Finally, the timing reports are generated for the resulting synthesized netlist by `OpenSTA`.
 
-
---> Inorder to perform synthesis, you will need:
-* `.v` of the avsddac and its `.libs` file.
-* To generate the `.libs` run the perl script given on this link `https://vlsi.pro/creating-lib-file-from-verilog/`, with the command given below. 
+Inorder to perform synthesis, you will need:
+* Verilog file(.v) of the avsddac and its LIB(.lib) file.
+* To generate the LIB file run the perl script given on this link `https://vlsi.pro/creating-lib-file-from-verilog/`, with the command given below. 
 
 `perl verilog_to_lib.pl avsddac.v avsddac`
 
-
---> To open `yosys` , just type `yosys` in linux shell.
-
+To perform synthesys in yosys
+--> Just type `yosys` in linux shell.
 --> Then follow the script: 
 
 ```
@@ -169,6 +169,9 @@ The synthesized netlist can be found here.
 **Post-synthesis Simulation:** 
 
 ![image](https://user-images.githubusercontent.com/79994584/119227589-4c6b7d00-bb2c-11eb-8396-785390399740.png)
+
+### OpenSTA
+
 
 
 
