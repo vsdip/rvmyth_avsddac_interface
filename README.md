@@ -52,20 +52,17 @@ First, we will need to generate a verilog module for DAC and obtain the analog o
 4. Finally integrate both rvymth and DAC using a Top level module and test it to verify the correctness of the integration.
 
 
-   1. `iverilog rvmyth_avsddac_interface.v rvmyth_avsddac_interface_TB.v`
+   1. `iverilog rvmyth_avsddac.v rvmyth_TB.v`
    2. `./a.out`
    3. `gtkwave rvmyth_avsddac_interface_TB.vcd`
-
-
-
-![](interface/interface.png)
-
+ 
+![image](https://user-images.githubusercontent.com/82170364/121876341-07032f80-cd27-11eb-8596-6bf71b9e2288.png)
 
 `out [9:0]` --> rvymth 10-bit digital output
 
 `D [9:0]` --> DAC 10-bit digital input 
 
-`dacout` --> DAC analog output`
+`Out` --> DAC analog output`
 
 
 *Further steps require openLANE and skywater130 PDK.*
