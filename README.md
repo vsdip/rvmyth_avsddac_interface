@@ -389,7 +389,7 @@ add_lefs -src $lefs
 run_synthesis
 ```
 
-The output files can be found here.[]
+The output files can be found [here](https://github.com/vsdip/rvmyth_avsddac_interface/tree/main/openlane/synthesis).
 
 
 ## FLOORPLANNING
