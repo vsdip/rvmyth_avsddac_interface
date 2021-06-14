@@ -32,7 +32,8 @@ First, we will need to generate a verilog module for DAC and obtain the analog o
      5. `gtkwave tb_mythcore_test.vcd`
   
  
- ![](interface/rvmyth.png)
+![image](https://user-images.githubusercontent.com/82170364/121876882-a6282700-cd27-11eb-9a3d-132172a2aac2.png)
+
 
  *10-bit digital codes observed at the output of rvmyth.*
  
