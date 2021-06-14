@@ -499,8 +499,8 @@ magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.placement.
 
 # Contributors 
 
-- Mansi Mohapatra, M.Tech VLSI Design, Indira Gandhi Delhi Technical University for Women, New Delhi, India
-- Mili Anand, M.Tech VLSI Design, Indira Gandhi Delhi Technical University for Women, New Delhi, India
+- Mansi Mohapatra, M.Tech VLSI Design, Indira Gandhi Delhi Technical University for Women, New Delhi
+- Mili Anand, M.Tech VLSI Design, Indira Gandhi Delhi Technical University for Women, New Delhi
 - Kunal Ghosh, Founder, VSD Corp. Pvt. Ltd
 
 
