@@ -100,7 +100,7 @@ Inorder to perform synthesis, you will need:
 
 To perform synthesys in yosys
 --> Just type `yosys` in linux shell.
---> Then follow the script.
+--> Then follow the [script](https://github.com/vsdip/rvmyth_avsddac_interface/blob/main/rvmyth_avsddac.ys) 
 
 The synthesized netlist can be found here. 
 
