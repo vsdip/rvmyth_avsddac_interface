@@ -33,6 +33,7 @@
        - [IO Placement](#io-placement)
        - [PLACEMENT](#placement)
      - [Key points to remember](#key-points-to-remember)
+     - [Future work](#future-work)
 - [Acknowledgement](#acknowledgement)
   
 
@@ -337,6 +338,8 @@ In the `designs` directory, create a folder with the name of the project.
 cd designs
 mkdir rvmyth_avsddac
 ```
+
+![image](https://user-images.githubusercontent.com/79994584/121949672-5c1a6200-cd76-11eb-98fa-e30563b90975.png)
 
 
 ## Setting up the new project
