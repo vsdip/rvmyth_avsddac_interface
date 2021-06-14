@@ -94,7 +94,7 @@ The OpenLANE and sky130 installation can be done by following the steps in this 
 
 Inorder to perform synthesis, you will need:
 * Verilog file(.v) of the avsddac and its LIB(.lib) file.
-* To generate the LIB file run the perl script given on this link `https://vlsi.pro/creating-lib-file-from-verilog/`, with the command given below. 
+* To generate the LIB file run the perl script given on this [link](https://vlsi.pro/creating-lib-file-from-verilog/), with the command given below. 
 
 `perl verilog_to_lib.pl avsddac.v avsddac`
 
