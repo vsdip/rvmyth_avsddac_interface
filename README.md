@@ -2,9 +2,22 @@
 
 *The purpose of this project is to integrate rvmyth (RISC-V) with digital to analog converter (DAC) and perform PNR using end-to-end open-source EDA tools. It also discusses the steps to modify the current IP layouts inorder to ensure its acceptance by the EDA tools.*
 
-#### Required Tools
+# Table of contents
 
-`iverilog` and  `gtkwave`
+- [Problem Statement](#problem-statement)
+- [DAC Specs Provided](#dac-specs-provided)
+- [Methodology](#methodology)
+    -[Steps to follow](#steps-to-follow)
+- [OpenLANE and sky130 installation](#openlane-and-sky130-installation)
+- [Synthesis in yosys](#syhthesis-in-yosys)
+- [OpenSTA](#OpenSTA)
+- [SoC Physical Design](#soc-physical-design)
+   -[Obtaining IP](#obtaining-ip)
+   -[Obtaining verilog files](#obtaining-verilog-files)
+   -[Generating LEF file](#generating-lef-file)
+   -[Limitations of current IP Layouts](#limitations-of-current-ip-layouts)
+   
+   
 
 ### Problem Statement 
 --------------------------
@@ -17,8 +30,13 @@
 
 ![image](https://user-images.githubusercontent.com/79994584/117629351-b5034300-b197-11eb-91d6-9cf9b3fb74b4.png)
 
+# Methodology
+
 First, we will need to generate a verilog module for DAC and obtain the analog output reciprocation for some arbitrary digital inputs to test it. Later we will give the digital output of rvmyth to the 10-bit DAC by creating an interface between the two analog and digital blocks.
 
+#### Required Tools
+
+`iverilog` and  `gtkwave`
 
 ## Steps to follow
 
@@ -69,7 +87,7 @@ First, we will need to generate a verilog module for DAC and obtain the analog o
 *Further steps require openLANE and skywater130 PDK.*
 
 
-## OpenLANE and sky130 installation 
+# OpenLANE and sky130 installation 
 
 * OpenLANE is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, Fault,SPEF-Extractor and custom methodology scripts for design exploration and optimization.
 The OpenLANE and sky130 installation can be done by following the steps in this repository `https://github.com/nickson-jose/openlane_build_script`.
@@ -78,7 +96,7 @@ The OpenLANE and sky130 installation can be done by following the steps in this 
 
 * After finishing off the installation, the first step in the design flow is to synthesize the generated RTL code. 
 
-### Synthesis in yosys
+## Synthesis in yosys
 
 * In OpenLANE the RTL synthesis is performed by `yosys`.
 * The technolgy mapping is performed by `abc`.
@@ -453,7 +471,7 @@ magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.placement.
 
 # Acknowledgement
 
-- Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd
+- Kunal Ghosh, Founder, VSD Corp. Pvt. Ltd
 - Steve Hoover, Founder, Redwood EDA
 - Shivani Shah, IIIT Bangalore
 
