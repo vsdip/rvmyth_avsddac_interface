@@ -434,7 +434,7 @@ tap_decap_or
 detailed_placement
 ```
 
-After final placement, the layout can be viewed in magic using merged LEF and DEF file. The DEF file can be found here.[]
+After final placement, the layout can be viewed in magic using merged LEF and DEF file. The DEF file can be found [here](https://github.com/vsdip/rvmyth_avsddac_interface/tree/main/openlane/placement).
 
 
 ```javascript
