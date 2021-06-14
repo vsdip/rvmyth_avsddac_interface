@@ -130,7 +130,7 @@ Inorder to carry out the physical design flow, following input files are require
 
 ## Obtaining IP 
 
-The Digital to Analog Converter (DAC) for sky130 techonology is available in the following repository https://github.com/vsdip/avsddac_3v3_sky130_v1.git, it contains all the magic layout files which will be subsequently required for obtaining the `avsddac.lef` for the 10-bit DAC. 
+The Digital to Analog Converter (DAC) for sky130 techonology is available in this [repository](https://github.com/vsdip/avsddac_3v3_sky130_v1.git), it contains all the magic layout files which will be subsequently required for obtaining the `avsddac.lef` for the 10-bit DAC. 
 The magic layout files can be found here ( ). 
 
 Using the magic layout files and the tech file i.e. `sky130A.tech` lef file can be generated after implementing certain modifications to the layout. 
@@ -322,7 +322,7 @@ docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_
 
 This creates a `config.tcl` file with default settings, here the setting of environment variables will be done. This file also contains the reason for some configurations as comments.
 
-The information about the environment variables and their default values can be found here https://github.com/The-OpenROAD-Project/OpenLane/blob/master/configuration/README.md.
+The information about the environment variables and their default values can be found [here](https://github.com/The-OpenROAD-Project/OpenLane/blob/master/configuration/README.md).
 
 
 ## Adding the input files
