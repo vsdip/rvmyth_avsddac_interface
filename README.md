@@ -338,6 +338,7 @@ cd designs
 mkdir rvmyth_avsddac
 ```
 
+
 ## Setting up the new project
 
 Go to the `~/openlane_working_dir/openlane` and execute the following commands:
