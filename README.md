@@ -106,7 +106,7 @@ The synthesized netlist can be found [here](https://github.com/vsdip/rvmyth_avsd
 
 --> Now, simulate the generated netlist in `iverilog` & `gtkwave` to compare the pre - synthesis and post- synthesis simulations. 
 
-For that you'd need to create a verilog code for gate level simulation that would include the synthesized netlist verilog file obtained from yosys. The files necessary for pre and post synthesis can be found here.
+For that you'd need to create a verilog code for gate level simulation that must include the synthesized netlist verilog file obtained from yosys. The files necessary for pre and post synthesis can be found here.
 
 *Both pre-synth and post-synth simulations must give out the same output.*
 
