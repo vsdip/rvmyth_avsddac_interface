@@ -397,7 +397,7 @@ The output file can be found [here](https://github.com/vsdip/rvmyth_avsddac_inte
 ```javascript
 init_floorplan
 ```
-After floorplanning, the layout can be viewed in magic using the `merged.lef` and the DEF file. The DEF file can be found here.[]
+After floorplanning, the layout can be viewed in magic using the `merged.lef` and the DEF file. The DEF file can be found [here](https://github.com/vsdip/rvmyth_avsddac_interface/tree/main/openlane/floorplan).
 
 ```javascript
 magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.floorplan.def
