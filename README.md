@@ -213,7 +213,7 @@ Before beginning with the layout modifications, one must be familiar with the fo
 ![image](https://user-images.githubusercontent.com/79994584/121804058-1c625600-cc62-11eb-9544-216cdaf7c1e8.png)
 
 
-  - `Text string`: Here give the desirable port name for the selected layer. ( *Make sure that the port names are same as the ones used in the RTL code, else the floorplanning stage would prompt an error* ) 
+  - `Text string`: Here give the desirable port name for the selected layer. 
   - `Size (um)` : This specifies the size of the port name. 
   - `Attach to layer` : Here check the `sticky`, uncheck the `default` and specify the layer. (*here the selected layer is locali*) 
   - `Port` : Check the `enable` option.
@@ -403,9 +403,8 @@ After floorplanning, the layout can be viewed in magic using the `merged.lef` an
 magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.floorplan.def
 ```
 
-![image](https://user-images.githubusercontent.com/79994584/121886247-d628f780-cd32-11eb-9c4c-4b8390be41be.png)
+![image](https://user-images.githubusercontent.com/79994584/121905378-b9e38580-cd47-11eb-9eb5-d2ab74d79fa4.png)
 
-![image](https://user-images.githubusercontent.com/79994584/121886529-2011dd80-cd33-11eb-89d0-731e665e9406.png)
 
 
 ## IO Placement
@@ -445,6 +444,18 @@ magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.placement.
 
 
 ![image](https://user-images.githubusercontent.com/79994584/121888015-1a1cfc00-cd35-11eb-840d-5d205e65c41c.png)
+
+
+## Key points to remember 
+
+- Make sure that the port names are same as the ones used in the RTL code, else the floorplanning stage would prompt an error.
+- Keep the design name and verilog file name same as the top module name.
+
+# Acknowledgement
+
+- Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd
+- Steve Hoover, Founder, Redwood EDA
+- Shivani Shah, IIIT Bangalore
 
 
 
