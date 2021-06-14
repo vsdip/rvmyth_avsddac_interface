@@ -478,6 +478,7 @@ magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.placement.
 
 ![image](https://user-images.githubusercontent.com/79994584/121887900-f9ed3d00-cd34-11eb-9ada-6691cb77eb22.png)
 
+![image](https://user-images.githubusercontent.com/79994584/121925490-9aa22380-cd5a-11eb-95e2-71b924c37c0f.png)
 
 ![image](https://user-images.githubusercontent.com/79994584/121888015-1a1cfc00-cd35-11eb-840d-5d205e65c41c.png)
 
