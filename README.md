@@ -100,59 +100,7 @@ Inorder to perform synthesis, you will need:
 
 To perform synthesys in yosys
 --> Just type `yosys` in linux shell.
---> Then follow the script: 
-
-```
-read_verilog rvmyth_avsddac_interface.v 
-```
-
-```
-read_liberty -lib avsddac.lib
-```
-
-```
-read_liberty -lib sky130_fd_sc_hd__tt_025C_1v80.lib
-```
-
-```
-synth -top rvmyth_avsddac_interface
-```
-
-```
-dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
-```
-
-```
-opt
-```
-
-```
-abc -liberty sky130_fd_sc_hd__tt_025C_1v80.lib -script +strash;scorr;ifraig;retime;{D};strash;dch,-f;map,-M,1,{D}
-```
-
-```
-flatten
-```
-
-```
-setundef -zero
-```
-
-```
-clean -purge
-```
-
-```
-rename -enumerate
-```
-
-```
-stat
-```
-
-```
-write_verilog -noattr rvmyth_avsddac.synth.v
-```
+--> Then follow the script.
 
 The synthesized netlist can be found here. 
 
@@ -173,6 +121,8 @@ For that you'd need to create a verilog code for gate level simulation that woul
 To perform sta in the tool we need to create sdc and config file. Both can be found here.
 
 ### Timing report
+To get the timing report type `sta rvmyth_avsddac.prelayout.conf`
+
 ![image](https://user-images.githubusercontent.com/82170364/121860402-6dcc1d00-cd16-11eb-9f4a-43a131e8b82e.png)
 
 
