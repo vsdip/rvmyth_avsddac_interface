@@ -7,15 +7,15 @@
 - [Problem Statement](#problem-statement)
 - [DAC Specs Provided](#dac-specs-provided)
 - [Methodology](#methodology)
-    -[Steps to follow](#steps-to-follow)
+      -[Steps to follow](#steps-to-follow)
 - [OpenLANE and sky130 installation](#openlane-and-sky130-installation)
 - [Synthesis in yosys](#syhthesis-in-yosys)
 - [OpenSTA](#OpenSTA)
 - [SoC Physical Design](#soc-physical-design)
-   -[Obtaining IP](#obtaining-ip)
-   -[Obtaining verilog files](#obtaining-verilog-files)
-   -[Generating LEF file](#generating-lef-file)
-   -[Limitations of current IP Layouts](#limitations-of-current-ip-layouts)
+      -[Obtaining IP](#obtaining-ip)
+      -[Obtaining verilog files](#obtaining-verilog-files)
+      -[Generating LEF file](#generating-lef-file)
+      -[Limitations of current IP Layouts](#limitations-of-current-ip-layouts)
    
    
 
