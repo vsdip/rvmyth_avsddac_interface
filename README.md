@@ -118,7 +118,7 @@ For that you'd need to create a verilog code for gate level simulation that woul
 ![image](https://user-images.githubusercontent.com/82170364/121860841-e0d59380-cd16-11eb-9e1c-2440c018842a.png)
 
 ## OpenSTA
-To perform sta in the tool we need to create sdc and config file. Both can be found here.
+To perform sta in the tool we need to create sdc and config file. Both can be found [here](https://github.com/vsdip/rvmyth_avsddac_interface/tree/main/OpenSTA).
 
 ### Timing report
 To get the timing report type `sta rvmyth_avsddac.prelayout.conf`
