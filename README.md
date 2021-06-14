@@ -395,6 +395,15 @@ The output files can be found here.[]
 ```
 init_floorplan
 ```
+After floorplanning, the layout can be viewed in magic using the `merged.lef` and the DEF file. The DEF file can be found here.[]
+
+```javascript
+magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.floorplan.def
+```
+
+![image](https://user-images.githubusercontent.com/79994584/121886247-d628f780-cd32-11eb-9c4c-4b8390be41be.png)
+
+![image](https://user-images.githubusercontent.com/79994584/121886529-2011dd80-cd33-11eb-89d0-731e665e9406.png)
 
 
 ## IO Placement
@@ -425,9 +434,16 @@ detailed_placement
 
 After final placement, the layout can be viewed in magic using merged LEF and DEF file. The DEF file can be found here.[]
 
+
 ```
 magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.placement.def
 ```
+
+![image](https://user-images.githubusercontent.com/79994584/121887900-f9ed3d00-cd34-11eb-9ada-6691cb77eb22.png)
+
+
+![image](https://user-images.githubusercontent.com/79994584/121888015-1a1cfc00-cd35-11eb-840d-5d205e65c41c.png)
+
 
 
 
