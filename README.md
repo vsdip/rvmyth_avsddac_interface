@@ -102,7 +102,7 @@ To perform synthesys in yosys
 --> Just type `yosys` in linux shell.
 --> Then follow the [script](https://github.com/vsdip/rvmyth_avsddac_interface/blob/main/rvmyth_avsddac.ys) 
 
-The synthesized netlist can be found here. 
+The synthesized netlist can be found [here](https://github.com/vsdip/rvmyth_avsddac_interface/blob/main/iverilog/Post-synthesis/rvmyth_avsddac.synth.v). 
 
 --> Now, simulate the generated netlist in `iverilog` & `gtkwave` to compare the pre - synthesis and post- synthesis simulations. 
 
