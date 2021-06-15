@@ -492,6 +492,15 @@ magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.placement.
 - To complete the PNR flow proceeding with routing and completing the SoC design with final layout generation.
 https://github.com/The-OpenROAD-Project/OpenLane/issues/426 
 
+# References 
+```javascript
+1. https://github.com/vsdip/avsddac_3v3_sky130_v1
+2. https://github.com/vsdip/vsdmixedsignalflow
+3. https://github.com/nickson-jose/vsdstdcelldesign
+4. https://gitlab.com/gab13c/openlane-workshop
+5. https://www.udemy.com/course/vsd-intern-dac-ip-design-using-sky130-pdks-part-3/
+6. https://www.udemy.com/course/vsd-intern-mixed-signal-physical-design-flow/
+```
 # Acknowledgement
 
 - Kunal Ghosh, Founder, VSD Corp. Pvt. Ltd
