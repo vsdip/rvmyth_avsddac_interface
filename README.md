@@ -31,10 +31,12 @@
        - [SYNTHESIS](#synthesis)
        - [FLOORPLANNING](#floorplanning)
        - [IO Placement](#io-placement)
-       - [PLACEMENT](#placement)
+       - [Placement](#placement)
      - [Key points to remember](#key-points-to-remember)
      - [Future work](#future-work)
+     - [References](#references)
 - [Acknowledgement](#acknowledgement)
+- [Contributors](#contributors)
   
 
 ### Problem Statement 
