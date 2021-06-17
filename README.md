@@ -340,7 +340,9 @@ In the `designs` directory, create a folder with the name of the project.
 cd designs
 mkdir rvmyth_avsddac
 ```
-![image](https://user-images.githubusercontent.com/79994584/121952212-946f6f80-cd79-11eb-8317-4b3875f6eed6.png)
+
+![image](https://user-images.githubusercontent.com/79994584/122408094-bc401c80-cf9f-11eb-84bc-e98bb79ffdc8.png)
+
 
 
 ## Setting up the new project
@@ -486,23 +488,25 @@ magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.placement.
 
 ## Key points to remember 
 
+
+- Keep the design name and verilog file name same as the top module name, else there will be some errors during synthesis. 
 - Make sure that the port names are same as the ones used in the RTL code, else the floorplanning stage would prompt an error.
-- Keep the design name and verilog file name same as the top module name.
+
 
 ## Future work
  
 - To complete the PNR flow proceeding with routing and completing the SoC design with final layout generation.
-https://github.com/The-OpenROAD-Project/OpenLane/issues/426 
+(https://github.com/The-OpenROAD-Project/OpenLane/issues/426)
 
 # References 
-```javascript
+
 1. https://github.com/vsdip/avsddac_3v3_sky130_v1
 2. https://github.com/vsdip/vsdmixedsignalflow
 3. https://github.com/nickson-jose/vsdstdcelldesign
 4. https://gitlab.com/gab13c/openlane-workshop
 5. https://www.udemy.com/course/vsd-intern-dac-ip-design-using-sky130-pdks-part-3/
 6. https://www.udemy.com/course/vsd-intern-mixed-signal-physical-design-flow/
-```
+
 # Acknowledgement
 
 - Kunal Ghosh, Founder, VSD Corp. Pvt. Ltd
