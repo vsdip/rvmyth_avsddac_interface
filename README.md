@@ -507,16 +507,16 @@ magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.placement.
 
 # Acknowledgement
 
-- Kunal Ghosh, Founder, VSD Corp. Pvt. Ltd
-- Steve Hoover, Founder, Redwood EDA
-- Shivani Shah, IIIT Bangalore
-- Shalini Kanna, Master of Science in Computer Engineering, University of Massachusetts Lowell, Lowell,MA, USA
+- **Kunal Ghosh**, Founder, VSD Corp. Pvt. Ltd
+- **Steve Hoover**, Founder, Redwood EDA
+- **Shivani Shah**, IIIT Bangalore
+- **Shalini Kanna**, Master of Science in Computer Engineering, University of Massachusetts Lowell, Lowell,MA, USA
 
 # Contributors 
 
-- Mansi Mohapatra, M.Tech VLSI Design, Indira Gandhi Delhi Technical University for Women (IGDTUW)
-- Mili Anand, M.Tech VLSI Design, Indira Gandhi Delhi Technical University for Women (IGDTUW)
-- Kunal Ghosh, Founder, VSD Corp. Pvt. Ltd
+- **Mansi Mohapatra**, M.Tech VLSI Design, Indira Gandhi Delhi Technical University for Women (IGDTUW)
+- **Mili Anand**, M.Tech VLSI Design, Indira Gandhi Delhi Technical University for Women (IGDTUW)
+- **Kunal Ghosh**, Founder, VSD Corp. Pvt. Ltd
 
 
 
