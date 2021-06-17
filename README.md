@@ -340,7 +340,6 @@ In the `designs` directory, create a folder with the name of the project.
 cd designs
 mkdir rvmyth_avsddac
 ```
-![image](https://user-images.githubusercontent.com/79994584/122408934-5dc76e00-cfa0-11eb-9bfd-b6eeb86b6750.png)
 
 
 ## Setting up the new project
