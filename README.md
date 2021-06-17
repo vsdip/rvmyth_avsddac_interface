@@ -340,9 +340,7 @@ In the `designs` directory, create a folder with the name of the project.
 cd designs
 mkdir rvmyth_avsddac
 ```
-
-![image](https://user-images.githubusercontent.com/79994584/122408094-bc401c80-cf9f-11eb-84bc-e98bb79ffdc8.png)
-
+![image](https://user-images.githubusercontent.com/79994584/122408934-5dc76e00-cfa0-11eb-9bfd-b6eeb86b6750.png)
 
 
 ## Setting up the new project
@@ -516,8 +514,8 @@ magic -T ~/sky130A.tech lef read ~/merged.lef def read rvmyth_avsddac.placement.
 
 # Contributors 
 
-- Mansi Mohapatra, M.Tech VLSI Design, Indira Gandhi Delhi Technical University for Women, New Delhi
-- Mili Anand, M.Tech VLSI Design, Indira Gandhi Delhi Technical University for Women, New Delhi
+- Mansi Mohapatra, M.Tech VLSI Design, Indira Gandhi Delhi Technical University for Women (IGDTUW)
+- Mili Anand, M.Tech VLSI Design, Indira Gandhi Delhi Technical University for Women (IGDTUW)
 - Kunal Ghosh, Founder, VSD Corp. Pvt. Ltd
 
 
