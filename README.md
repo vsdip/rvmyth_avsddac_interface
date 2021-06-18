@@ -179,9 +179,7 @@ Using the magic layout files and the tech file i.e. `sky130A.tech` lef file can 
 The project related design files  can be found [here](https://github.com/vsdip/rvmyth_avsddac_interface/tree/main/design). 
 
 
-
-![image](https://user-images.githubusercontent.com/79994584/121798255-e1045f00-cc42-11eb-93fa-b2664a9963ac.png)
-
+![image](https://user-images.githubusercontent.com/79994584/122520359-2228b480-d031-11eb-9cc1-ee852afc6da3.png)
 
 
 ## Generating LEF file
