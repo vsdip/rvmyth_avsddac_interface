@@ -143,11 +143,10 @@ For that you'd need to create a verilog code for gate level simulation that must
 *Both pre-synth and post-synth simulations must give out the same output.*
 
 **Pre -synthesis Simulation:**
-![image](https://user-images.githubusercontent.com/82170364/121861342-5e999f00-cd17-11eb-8c43-b7402b03dabb.png)
-
+![image](https://user-images.githubusercontent.com/82170364/122536584-5193ed00-d042-11eb-9f34-f8f89cbde161.png)
 
 **Post-synthesis Simulation:** 
-![image](https://user-images.githubusercontent.com/82170364/121860841-e0d59380-cd16-11eb-9e1c-2440c018842a.png)
+![image](https://user-images.githubusercontent.com/82170364/122537574-50af8b00-d043-11eb-8530-42a3e70aad23.png)
 
 ## OpenSTA
 To perform sta in the tool we need to create sdc and config file. Both can be found [here](https://github.com/vsdip/rvmyth_avsddac_interface/tree/main/OpenSTA).
