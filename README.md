@@ -91,9 +91,9 @@ First, we will need to generate a verilog module for DAC and obtain the analog o
 4. Finally integrate both rvymth and DAC using a Top level module and test it to verify the correctness of the integration.
 
 
-   1. `iverilog rvmyth_avsddac.v rvmyth_TB.v`
+   1. `iverilog rvmyth_avsddac.v rvmyth_avsddac_TB.v`
    2. `./a.out`
-   3. `gtkwave rvmyth_avsddac_interface_TB.vcd`
+   3. `gtkwave rvmyth_avsddac.vcd`
  
 ![image](https://user-images.githubusercontent.com/82170364/121876341-07032f80-cd27-11eb-8596-6bf71b9e2288.png)
 
@@ -146,6 +146,12 @@ For that you'd need to create a verilog code for gate level simulation that must
 ![image](https://user-images.githubusercontent.com/82170364/122536584-5193ed00-d042-11eb-9f34-f8f89cbde161.png)
 
 **Post-synthesis Simulation:** 
+To perform post synthesis you also need to include verilog files for standard cell library.
+
+1. ` iverilog -o gls.v sky130_fd_sc_hd.v primitives.v`
+2. `./a.out`
+3. `gtkwave gls.vcd`
+
 ![image](https://user-images.githubusercontent.com/82170364/122537574-50af8b00-d043-11eb-8530-42a3e70aad23.png)
 
 ## OpenSTA
