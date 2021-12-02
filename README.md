@@ -154,12 +154,12 @@ To perform post synthesis you also need to include verilog files for standard ce
 ![image](https://user-images.githubusercontent.com/82170364/122537574-50af8b00-d043-11eb-8530-42a3e70aad23.png)
 
 <!--## OpenSTA
-To perform sta in the tool we need to create sdc and config file. Both can be found [here](https://github.com/vsdip/rvmyth_avsddac_interface/tree/main/OpenSTA).-->
+To perform sta in the tool we need to create sdc and config file. Both can be found [here](https://github.com/vsdip/rvmyth_avsddac_interface/tree/main/OpenSTA).
 
 ### Timing report
 To get the timing report type `sta rvmyth_avsddac.prelayout.conf`
 
-![image](https://user-images.githubusercontent.com/82170364/121860402-6dcc1d00-cd16-11eb-9f4a-43a131e8b82e.png)
+![image](https://user-images.githubusercontent.com/82170364/121860402-6dcc1d00-cd16-11eb-9f4a-43a131e8b82e.png)-->
 
 
 # SoC Physical Design 
