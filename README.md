@@ -10,7 +10,6 @@
 - [Steps to follow](#steps-to-follow)         
 - [OpenLANE and sky130 installation](#openlane-and-sky130-installation)
 - [Synthesis in yosys](#syhthesis-in-yosys)
-- [OpenSTA](#OpenSTA)
 - [SoC Physical Design](#soc-physical-design)
 
     - [Obtaining IP](#obtaining-ip)
